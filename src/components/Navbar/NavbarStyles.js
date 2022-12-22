@@ -4,8 +4,9 @@ export const NavbarContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 10px 10px;
   border-bottom: 2px solid lightgray;
+  align-items: center;
 
   .navImage {
     height: 30px;
@@ -16,19 +17,20 @@ export const NavbarContainer = styled.nav`
 
   .navuserBox {
     display: flex;
-    align-items: center !important;
-    gap: 2px;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
     cursor: pointer;
-  }
 
-  .userIcon {
-    height: 30px;
-    width: 30px;
-    color: grey;
-  }
+    .userIcon {
+      height: 28px;
+      width: 28px;
+      color: grey;
+      margin-top: 5px;
+    }
 
-  .navuserEmail {
-    font-size: 12px;
-    /* font-weight: bolder; */
+    .navuserEmail {
+      font-size: 16px;
+    }
   }
 `;

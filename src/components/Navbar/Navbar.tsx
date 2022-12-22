@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavbarContainer } from './NavbarStyles';
 import LogoSmall from '../../assets/images/tx24sm-logo.png'
-import { HiOutlineUserCircle } from 'react-icons/hi'
+import { BiUserCircle } from 'react-icons/bi'
 
 const Navbar: React.FC = () => {
     return (
@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className='navuserBox'>
-                <span><HiOutlineUserCircle className='userIcon' /></span>
+                <span><BiUserCircle className='userIcon' /></span>
                 <span className='navuserEmail'>user@email.com</span>
             </div >
         </NavbarContainer >
