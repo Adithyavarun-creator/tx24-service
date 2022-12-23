@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../breakpoints/mediaQueries";
 
 export const FooterContainer = styled.footer`
   display: flex;
@@ -7,6 +8,20 @@ export const FooterContainer = styled.footer`
   background-color: lightpink;
   gap: 40px;
   margin-top: 50px;
+
+  @media ${devices.bigLaptopsAndDesktops} {
+    padding: 35px 40px;
+    gap: 40px;
+  }
+  @media ${devices.tabletsAndIpads} {
+  }
+
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
+  }
 
   .footerContent {
     display: flex;
@@ -18,12 +33,26 @@ export const FooterContainer = styled.footer`
     object-fit: fill;
     height: 50px;
     width: 100%;
+    @media ${devices.bigLaptopsAndDesktops} {
+      height: 30px;
+      width: 100%;
+    }
+    @media ${devices.tabletsAndIpads} {
+      height: 30px;
+      width: 100%;
+    }
   }
 
   .footerBox {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media ${devices.bigLaptopsAndDesktops} {
+      gap: 10px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      gap: 10px;
+    }
   }
 
   .footerHeading {
@@ -31,6 +60,13 @@ export const FooterContainer = styled.footer`
     font-weight: 300;
     font-size: 22px;
     color: #000000;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+      font-size: 22px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      font-size: 18px;
+    }
   }
 
   .footerul {
@@ -38,6 +74,13 @@ export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
     gap: 3px;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+      gap: 3px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      gap: 3px;
+    }
   }
 
   .footerlist {
@@ -45,6 +88,13 @@ export const FooterContainer = styled.footer`
     font-weight: 300;
     font-size: 18px;
     color: #000000;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+      font-size: 16px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      font-size: 14px;
+    }
   }
 
   .footerCopyright {
@@ -57,5 +107,12 @@ export const FooterContainer = styled.footer`
     font-weight: 300;
     font-size: 18px;
     color: #000000;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+      font-size: 16px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      font-size: 14px;
+    }
   }
 `;

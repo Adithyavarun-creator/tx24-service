@@ -12,6 +12,13 @@ export const LeftbarContainer = styled.div`
     padding: 8px 12px;
   }
 
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
+  }
+
   .leftbarTitle {
     font-weight: 300;
     font-size: 14px;

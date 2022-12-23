@@ -13,6 +13,13 @@ export const RightbarContainer = styled.div`
   @media ${devices.tabletsAndIpads} {
   }
 
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
+  }
+
   .rightbarBox-1 {
     border: 1px solid grey;
     display: flex;

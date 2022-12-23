@@ -13,6 +13,13 @@ export const MidContentContainer = styled.div`
   @media ${devices.tabletsAndIpads} {
     gap: 20px;
   }
+
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
+  }
 `;
 
 export const Box1Container = styled.div`
@@ -65,13 +72,14 @@ export const Box1Container = styled.div`
   .contentTokenBox {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     position: relative;
     /* gap: 30px; */
 
     span {
       font-style: normal;
       font-weight: 300;
-      font-size: 17px;
+      font-size: 16px;
       text-transform: uppercase;
 
       @media ${devices.bigLaptopsAndDesktops} {
@@ -465,18 +473,20 @@ export const Box3Container = styled.div`
     .flexColumn {
       display: flex;
       flex-direction: column;
+      gap: 15px;
     }
 
     span {
       font-style: normal;
       font-weight: 300;
-      font-size: 16px;
-      color: #949494;
+      font-size: 13px;
+      color: #000000;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        font-size: 13px;
       }
       @media ${devices.tabletsAndIpads} {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
   }

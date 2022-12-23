@@ -32,7 +32,7 @@ const MidContent: React.FC = () => {
 
                 <div className='contentTokenBox'>
                     <span>Maximum Ticket</span>
-                    <span>150.000 TXT</span>
+                    <span>150 TXT</span>
                     <span className='contentEqual'>=</span>
                     <span>7,812 BTC</span>
                 </div>
