@@ -6,20 +6,22 @@ import { DashboardContainer } from './DashboardStyles';
 
 const Dashboard: React.FC = () => {
     return (
-        <DashboardContainer>
-            <div className='leftbarWrapper'>
-                <LeftBar />
-            </div>
+        <>
+            <DashboardContainer>
+                <div className='leftbarWrapper'>
+                    <LeftBar />
+                </div>
 
-            <div className='contentWrapper'>
-                <MidContent />
-            </div>
+                <div className='contentWrapper'>
+                    <MidContent />
+                </div>
 
-            <div className='rightbarWrapper'>
-                <RightBar />
-            </div>
+                <div className='rightbarWrapper'>
+                    <RightBar />
+                </div>
 
-        </DashboardContainer>
+            </DashboardContainer>
+        </>
     );
 }
 

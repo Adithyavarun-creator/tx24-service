@@ -1,5 +1,5 @@
 import React from 'react';
-import { MidContentContainer } from './MidContentStyles';
+import { Box1Container, Box2Container, Box3Container, MidContentContainer } from './MidContentStyles';
 import { BiHide } from 'react-icons/bi'
 
 const MidContent: React.FC = () => {
@@ -9,7 +9,7 @@ const MidContent: React.FC = () => {
 
             {/**Box-1 */}
 
-            <div className='contentBox1'>
+            <Box1Container>
                 <div className="contentInfo">
                     <h1>Pre-sale Token Sales</h1>
                 </div>
@@ -25,7 +25,7 @@ const MidContent: React.FC = () => {
 
                 <div className='contentTokenBox'>
                     <span>Minimum Ticket</span>
-                    <span style={{ marginLeft: '20px' }}>5.000 TXT</span>
+                    <span>5.000 TXT</span>
                     <span className='contentEqual'>=</span>
                     <span>0,002604 BTC</span>
                 </div>
@@ -46,11 +46,11 @@ const MidContent: React.FC = () => {
                     <span>670.000$</span>
                     <span>67%</span>
                 </div>
-            </div>
+            </Box1Container>
 
 
             {/**Box-2 */}
-            <div className='contentBox2'>
+            <Box2Container>
 
                 <div className="contentHide">
                     <span className='contenthideText'>Hide</span>
@@ -126,11 +126,11 @@ const MidContent: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Box2Container>
 
 
             {/**Box-3 */}
-            <div className='contentBox3'>
+            <Box3Container>
 
                 <div className="contentHide">
                     <span className='contenthideText'>Hide</span>
@@ -224,7 +224,7 @@ const MidContent: React.FC = () => {
                 </div>
 
 
-            </div>
+            </Box3Container>
 
 
 
