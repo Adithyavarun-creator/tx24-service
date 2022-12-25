@@ -8,9 +8,24 @@ export const DashboardContainer = styled.div`
   flex-wrap: wrap;
 
   @media ${devices.bigLaptopsAndDesktops} {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
 
   @media ${devices.tabletsAndIpads} {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  @media ${devices.smallTabs} {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
 
   .leftbarWrapper {
@@ -21,6 +36,9 @@ export const DashboardContainer = styled.div`
     }
 
     @media ${devices.tabletsAndIpads} {
+      flex: 1;
+    }
+    @media ${devices.smallTabs} {
       flex: 1;
     }
   }
@@ -35,6 +53,12 @@ export const DashboardContainer = styled.div`
     @media ${devices.tabletsAndIpads} {
       flex: 1;
     }
+    @media ${devices.smallTabs} {
+      flex: 1;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .rightbarWrapper {
@@ -45,6 +69,9 @@ export const DashboardContainer = styled.div`
     }
 
     @media ${devices.tabletsAndIpads} {
+      flex: 1;
+    }
+    @media ${devices.smallTabs} {
       flex: 1;
     }
   }

@@ -19,7 +19,6 @@ const Dashboard: React.FC = () => {
                 <div className='rightbarWrapper'>
                     <RightBar />
                 </div>
-
             </DashboardContainer>
         </>
     );

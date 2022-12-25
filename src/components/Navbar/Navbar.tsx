@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
                                 </div>
 
                                 <div className='mobLogoutBtnbox'>
-                                    <button className='mobLogoutBtn'>Logout</button>
+                                    <button className='mobLogoutBtn' onClick={() => setMobnav(false)}>Logout</button>
                                 </div>
                             </div>
                         </NavModalBox>

@@ -34,6 +34,12 @@ export const LeftbarContainer = styled.div`
     @media ${devices.tabletsAndIpads} {
       font-size: 12px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .leftBarCols {
@@ -48,6 +54,12 @@ export const LeftbarContainer = styled.div`
       gap: 20px;
       margin-top: 20px;
       padding: 10px 10px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -70,6 +82,12 @@ export const LeftbarContainer = styled.div`
       gap: 10px;
       padding: 8px 10px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .leftbarIcon {
@@ -82,6 +100,12 @@ export const LeftbarContainer = styled.div`
     @media ${devices.tabletsAndIpads} {
       height: 20px;
       width: 20px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -101,6 +125,12 @@ export const LeftbarContainer = styled.div`
     @media ${devices.tabletsAndIpads} {
       font-size: 14px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .leftbarAccount {
@@ -109,6 +139,12 @@ export const LeftbarContainer = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       margin-top: 10px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -119,6 +155,12 @@ export const LeftbarContainer = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       margin-top: 30px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -135,6 +177,12 @@ export const LeftbarContainer = styled.div`
     @media ${devices.tabletsAndIpads} {
       padding: 2px 7px;
       font-size: 14px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 `;

@@ -30,12 +30,24 @@ export const NavbarContainer = styled.nav`
     width: 80px;
     background-color: white;
     object-fit: fill;
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .navToggleIcon {
     height: 35px;
     width: 35px;
     cursor: pointer;
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .navuserBox {
@@ -44,6 +56,13 @@ export const NavbarContainer = styled.nav`
     gap: 3px;
     align-items: center;
     cursor: pointer;
+
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .userIcon {
@@ -51,10 +70,24 @@ export const NavbarContainer = styled.nav`
     width: 28px;
     color: grey;
     margin-top: 5px;
+
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .navuserEmail {
     font-size: 16px;
+
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 `;
 
@@ -65,6 +98,13 @@ export const UserModalContainer = styled.div`
   /* position: relative; */
 
   @media ${devices.tabletsAndIpads} {
+  }
+
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
   }
 `;
 
@@ -91,6 +131,12 @@ export const UserModalBox = styled.div`
   @media ${devices.tabletsAndIpads} {
     width: 20%;
   }
+  @media ${devices.smallTabs} {
+    display: none;
+  }
+  @media ${devices.smallMobiles} {
+    display: none;
+  }
 
   .modalCloseIconBox {
     position: absolute;
@@ -103,6 +149,12 @@ export const UserModalBox = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       padding: 3px 5px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -119,6 +171,12 @@ export const UserModalBox = styled.div`
       height: 20px;
       width: 20px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .usermodalList {
@@ -130,6 +188,12 @@ export const UserModalBox = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       font-size: 14px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -149,6 +213,12 @@ export const UserModalBox = styled.div`
       padding: 6px 6px;
       font-size: 14px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 `;
 
@@ -167,6 +237,11 @@ export const MoblieNavigation = styled.nav`
     padding: 20px 20px;
   }
   @media ${devices.smallMobiles} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
   }
 
   .mobLogo {
@@ -177,6 +252,22 @@ export const MoblieNavigation = styled.nav`
       cursor: pointer;
     }
     @media ${devices.smallMobiles} {
+      height: 30px;
+      object-fit: fill;
+      height: 40px;
+      width: 100%;
+    }
+    @media ${devices.smallTabs} {
+      height: 30px;
+      object-fit: fill;
+      height: 40px;
+      width: 100%;
+    }
+    @media ${devices.smallMobiles} {
+      height: 30px;
+      object-fit: fill;
+      height: 30px;
+      width: 100%;
     }
   }
 
@@ -189,6 +280,9 @@ export const MoblieNavigation = styled.nav`
     }
 
     @media ${devices.smallMobiles} {
+      height: 38px;
+      width: 38px;
+      color: #ff1282;
     }
   }
 
@@ -201,15 +295,31 @@ export const MoblieNavigation = styled.nav`
     }
 
     @media ${devices.smallMobiles} {
+      display: flex;
+      justify-content: center;
+      /* background-color: orangered; */
+      flex-direction: column;
     }
   }
 
   .mobnavList {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 10px; */
+
+    @media ${devices.smallTabs} {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media ${devices.smallMobiles} {
+      gap: 8px;
+    }
   }
 `;
 
@@ -232,6 +342,15 @@ export const NavModalBox = styled.div`
     top: -83px;
   }
   @media ${devices.smallMobiles} {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+    padding: 20px 10px;
+    border: 2px solid darkgray;
+    height: 100vh;
+    position: relative;
+    top: -75px;
   }
 
   .mobnavColumns {
@@ -241,6 +360,9 @@ export const NavModalBox = styled.div`
       justify-content: space-between;
     }
     @media ${devices.smallMobiles} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -251,6 +373,9 @@ export const NavModalBox = styled.div`
       object-fit: fill;
     }
     @media ${devices.smallMobiles} {
+      height: 40px;
+      width: 100%;
+      object-fit: fill;
     }
   }
 
@@ -260,6 +385,8 @@ export const NavModalBox = styled.div`
       width: 50px;
     }
     @media ${devices.smallMobiles} {
+      height: 40px;
+      width: 40px;
     }
   }
 
@@ -270,6 +397,9 @@ export const NavModalBox = styled.div`
       color: #ff1282;
     }
     @media ${devices.smallMobiles} {
+      height: 40px;
+      width: 40px;
+      color: #ff1282;
     }
   }
 
@@ -280,6 +410,8 @@ export const NavModalBox = styled.div`
       /* justify-content: space-evenly; */
     }
     @media ${devices.smallMobiles} {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -291,6 +423,10 @@ export const NavModalBox = styled.div`
       margin-top: 30px;
     }
     @media ${devices.smallMobiles} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
     }
   }
 
@@ -301,6 +437,9 @@ export const NavModalBox = styled.div`
       color: #646464;
     }
     @media ${devices.smallMobiles} {
+      font-weight: 300;
+      font-size: 15px;
+      color: #646464;
     }
   }
 
@@ -311,6 +450,9 @@ export const NavModalBox = styled.div`
       color: #646464;
     }
     @media ${devices.smallMobiles} {
+      height: 20px;
+      width: 20px;
+      color: #646464;
     }
   }
 
@@ -321,6 +463,9 @@ export const NavModalBox = styled.div`
       margin-top: 50px;
     }
     @media ${devices.smallMobiles} {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
     }
   }
 
@@ -340,6 +485,18 @@ export const NavModalBox = styled.div`
       cursor: pointer;
     }
     @media ${devices.smallMobiles} {
+      padding: 10px 20px;
+      background-color: #ff1282;
+      color: white;
+      border: 2px solid #f4effe;
+      outline: none;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
     }
   }
 `;

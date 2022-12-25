@@ -15,17 +15,18 @@ export const MidContentContainer = styled.div`
   }
 
   @media ${devices.smallTabs} {
-    display: none;
+    gap: 20px;
   }
   @media ${devices.smallMobiles} {
-    display: none;
+    gap: 30px;
+    padding: 10px 10px;
+    display: flex;
   }
 `;
 
 export const Box1Container = styled.div`
   display: flex;
   flex-direction: column;
-
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -48,9 +49,35 @@ export const Box1Container = styled.div`
     gap: 10px;
   }
 
+  @media ${devices.smallTabs} {
+    padding: 10px 25px;
+    gap: 20px;
+  }
+  @media ${devices.smallMobiles} {
+    padding: 10px 10px;
+    gap: 10px;
+  }
+
   .contentInfo {
     display: flex;
     justify-content: space-between;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media ${devices.tabletsAndIpads} {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media ${devices.smallTabs} {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media ${devices.smallMobiles} {
+      display: flex;
+      justify-content: space-between;
+    }
 
     h1 {
       font-style: normal;
@@ -61,10 +88,24 @@ export const Box1Container = styled.div`
       color: #ff1282;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #ff1282;
       }
       @media ${devices.tabletsAndIpads} {
         font-weight: 300;
         font-size: 18px;
+      }
+      @media ${devices.smallTabs} {
+        font-weight: 300;
+        font-size: 18px;
+      }
+      @media ${devices.smallMobiles} {
+        font-weight: 300;
+        font-size: 14px;
       }
     }
   }
@@ -75,6 +116,30 @@ export const Box1Container = styled.div`
     flex-direction: row;
     position: relative;
     /* gap: 30px; */
+    @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      position: relative;
+    }
+    @media ${devices.tabletsAndIpads} {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      position: relative;
+    }
+    @media ${devices.smallTabs} {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      position: relative;
+    }
+    @media ${devices.smallMobiles} {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      position: relative;
+    }
 
     span {
       font-style: normal;
@@ -83,10 +148,20 @@ export const Box1Container = styled.div`
       text-transform: uppercase;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        font-weight: 300;
+        font-size: 16px;
       }
       @media ${devices.tabletsAndIpads} {
         font-weight: 300;
         font-size: 13.5px;
+      }
+      @media ${devices.smallTabs} {
+        font-weight: 300;
+        font-size: 13.5px;
+      }
+      @media ${devices.smallMobiles} {
+        font-weight: 300;
+        font-size: 12.5px;
       }
     }
 
@@ -95,8 +170,16 @@ export const Box1Container = styled.div`
       right: 140px;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        position: absolute;
+        right: 140px;
       }
       @media ${devices.tabletsAndIpads} {
+        right: 135px;
+      }
+      @media ${devices.smallTabs} {
+        right: 135px;
+      }
+      @media ${devices.smallMobiles} {
         right: 135px;
       }
     }
@@ -119,6 +202,12 @@ export const Box1Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       padding: 15px 20px;
     }
+    @media ${devices.smallTabs} {
+      padding: 15px 20px;
+    }
+    @media ${devices.smallMobiles} {
+      padding: 10px 10px;
+    }
 
     span {
       font-style: normal;
@@ -131,6 +220,16 @@ export const Box1Container = styled.div`
       @media ${devices.tabletsAndIpads} {
         font-weight: bold;
         font-size: 20px;
+        color: black;
+      }
+      @media ${devices.smallTabs} {
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+      }
+      @media ${devices.smallMobiles} {
+        font-weight: bold;
+        font-size: 14px;
         color: black;
       }
     }
@@ -159,6 +258,14 @@ export const Box2Container = styled.div`
     padding: 10px 25px;
     gap: 15px;
   }
+  @media ${devices.smallTabs} {
+    padding: 10px 25px;
+    gap: 15px;
+  }
+  @media ${devices.smallMobiles} {
+    padding: 10px 15px;
+    gap: 10px;
+  }
 
   .contentHide {
     display: flex;
@@ -170,6 +277,12 @@ export const Box2Container = styled.div`
     @media ${devices.bigLaptopsAndDesktops} {
     }
     @media ${devices.tabletsAndIpads} {
+      gap: 3px;
+    }
+    @media ${devices.smallTabs} {
+      gap: 3px;
+    }
+    @media ${devices.smallMobiles} {
       gap: 3px;
     }
   }
@@ -185,6 +298,12 @@ export const Box2Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       font-size: 14px;
     }
+    @media ${devices.smallTabs} {
+      font-size: 14px;
+    }
+    @media ${devices.smallMobiles} {
+      font-size: 12px;
+    }
   }
 
   .contentHideIcon {
@@ -195,8 +314,16 @@ export const Box2Container = styled.div`
     @media ${devices.bigLaptopsAndDesktops} {
     }
     @media ${devices.tabletsAndIpads} {
-      height: 10px;
-      width: 10px;
+      height: 15px;
+      width: 15px;
+    }
+    @media ${devices.smallTabs} {
+      height: 12px;
+      width: 12px;
+    }
+    @media ${devices.smallMobiles} {
+      height: 8px;
+      width: 8px;
     }
   }
 
@@ -204,6 +331,20 @@ export const Box2Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media ${devices.bigLaptopsAndDesktops} {
+    }
+    @media ${devices.tabletsAndIpads} {
+      height: 10px;
+      width: 10px;
+    }
+    @media ${devices.smallTabs} {
+      height: 10px;
+      width: 10px;
+    }
+    @media ${devices.smallMobiles} {
+      height: 8px;
+      width: 8px;
+    }
   }
 
   .contentInfoName {
@@ -216,6 +357,12 @@ export const Box2Container = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       font-size: 16px;
+    }
+    @media ${devices.smallTabs} {
+      font-size: 14px;
+    }
+    @media ${devices.smallMobiles} {
+      font-size: 13px;
     }
   }
 
@@ -230,6 +377,12 @@ export const Box2Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       gap: 8px;
     }
+    @media ${devices.smallTabs} {
+      gap: 8px;
+    }
+    @media ${devices.smallMobiles} {
+      gap: 6px;
+    }
 
     .contentTokenBox {
       display: flex;
@@ -241,6 +394,12 @@ export const Box2Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         gap: 8px;
+      }
+      @media ${devices.smallTabs} {
+        gap: 8px;
+      }
+      @media ${devices.smallMobiles} {
+        gap: 6px;
       }
     }
 
@@ -255,6 +414,12 @@ export const Box2Container = styled.div`
       @media ${devices.tabletsAndIpads} {
         font-size: 20px;
       }
+      @media ${devices.smallTabs} {
+        font-size: 16px;
+      }
+      @media ${devices.smallMobiles} {
+        font-size: 14px;
+      }
     }
 
     .contentUnit {
@@ -268,6 +433,12 @@ export const Box2Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         font-size: 16px;
+      }
+      @media ${devices.smallTabs} {
+        font-size: 16px;
+      }
+      @media ${devices.smallMobiles} {
+        font-size: 14px;
       }
     }
   }
@@ -289,6 +460,12 @@ export const Box2Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       gap: 17px;
     }
+    @media ${devices.smallTabs} {
+      gap: 15px;
+    }
+    @media ${devices.smallMobiles} {
+      gap: 13px;
+    }
 
     .distributionAmount {
       display: flex;
@@ -300,6 +477,12 @@ export const Box2Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         font-size: 25px;
+      }
+      @media ${devices.smallTabs} {
+        font-size: 20px;
+      }
+      @media ${devices.smallMobiles} {
+        font-size: 16px;
       }
 
       .distValue {
@@ -313,6 +496,12 @@ export const Box2Container = styled.div`
         @media ${devices.tabletsAndIpads} {
           font-size: 16px;
         }
+        @media ${devices.smallTabs} {
+          font-size: 16px;
+        }
+        @media ${devices.smallMobiles} {
+          font-size: 14px;
+        }
       }
 
       .distUnits {
@@ -324,6 +513,12 @@ export const Box2Container = styled.div`
         @media ${devices.bigLaptopsAndDesktops} {
         }
         @media ${devices.tabletsAndIpads} {
+          font-size: 12px;
+        }
+        @media ${devices.smallTabs} {
+          font-size: 12px;
+        }
+        @media ${devices.smallMobiles} {
           font-size: 12px;
         }
       }
@@ -340,6 +535,12 @@ export const Box2Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       gap: 16px;
     }
+    @media ${devices.smallTabs} {
+      gap: 14px;
+    }
+    @media ${devices.smallMobiles} {
+      gap: 12px;
+    }
 
     .distributionPercentage {
       display: flex;
@@ -351,6 +552,12 @@ export const Box2Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         gap: 25px;
+      }
+      @media ${devices.smallTabs} {
+        gap: 20px;
+      }
+      @media ${devices.smallMobiles} {
+        gap: 14px;
       }
     }
 
@@ -365,6 +572,12 @@ export const Box2Container = styled.div`
       @media ${devices.tabletsAndIpads} {
         gap: 14px;
       }
+      @media ${devices.smallTabs} {
+        gap: 12px;
+      }
+      @media ${devices.smallMobiles} {
+        gap: 10px;
+      }
     }
 
     .percentValue {
@@ -377,6 +590,12 @@ export const Box2Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         gap: 14px;
+      }
+      @media ${devices.smallTabs} {
+        gap: 12px;
+      }
+      @media ${devices.smallMobiles} {
+        gap: 10px;
       }
     }
   }
@@ -403,6 +622,12 @@ export const Box3Container = styled.div`
   @media ${devices.tabletsAndIpads} {
     gap: 14px;
   }
+  @media ${devices.smallTabs} {
+    gap: 12px;
+  }
+  @media ${devices.smallMobiles} {
+    gap: 10px;
+  }
 
   .contentHide {
     display: flex;
@@ -415,6 +640,12 @@ export const Box3Container = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       gap: 3px;
+    }
+    @media ${devices.smallTabs} {
+      gap: 6px;
+    }
+    @media ${devices.smallMobiles} {
+      gap: 8px;
     }
   }
 
@@ -429,6 +660,12 @@ export const Box3Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       font-size: 12px;
     }
+    @media ${devices.smallTabs} {
+      font-size: 12px;
+    }
+    @media ${devices.smallMobiles} {
+      font-size: 10px;
+    }
   }
 
   .contentHideIcon {
@@ -442,6 +679,14 @@ export const Box3Container = styled.div`
       height: 10px;
       width: 10px;
     }
+    @media ${devices.smallTabs} {
+      height: 10px;
+      width: 10px;
+    }
+    @media ${devices.smallMobiles} {
+      height: 8px;
+      width: 8px;
+    }
   }
 
   .contentTransactionsName {
@@ -454,6 +699,12 @@ export const Box3Container = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       font-size: 15px;
+    }
+    @media ${devices.smallTabs} {
+      font-size: 15px;
+    }
+    @media ${devices.smallMobiles} {
+      font-size: 12px;
     }
   }
 
@@ -469,11 +720,35 @@ export const Box3Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       padding: 10px 8px;
     }
+    @media ${devices.smallTabs} {
+      padding: 10px 8px;
+    }
+    @media ${devices.smallMobiles} {
+      padding: 6px 6px;
+    }
 
     .flexColumn {
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      @media ${devices.bigLaptopsAndDesktops} {
+      }
+      @media ${devices.tabletsAndIpads} {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      @media ${devices.smallTabs} {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      @media ${devices.smallMobiles} {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
     }
 
     span {
@@ -487,6 +762,13 @@ export const Box3Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         font-size: 13px;
+      }
+      @media ${devices.smallTabs} {
+        font-size: 13px;
+      }
+
+      @media ${devices.smallMobiles} {
+        font-size: 11px;
       }
     }
   }
@@ -502,6 +784,15 @@ export const Box3Container = styled.div`
     @media ${devices.tabletsAndIpads} {
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+    @media ${devices.smallTabs} {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media ${devices.smallMobiles} {
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 
     .transactionButton {
@@ -519,6 +810,15 @@ export const Box3Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         padding: 8px 6px;
+        font-size: 12.5px;
+      }
+      @media ${devices.smallTabs} {
+        padding: 8px 6px;
+        font-size: 12.5px;
+      }
+
+      @media ${devices.smallMobiles} {
+        padding: 6px 4px;
         font-size: 12.5px;
       }
     }
