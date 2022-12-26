@@ -55,7 +55,6 @@ export const Box1Container = styled.div`
     padding: 10px 25px;
     gap: 10px;
     display: flex;
-
   }
 
   @media ${devices.smallTabs} {
@@ -180,7 +179,7 @@ export const Box1Container = styled.div`
       }
       @media ${devices.smallMobiles} {
         font-weight: 300;
-        font-size: 10.5px;
+        font-size: 8.5px;
       }
     }
 
@@ -202,7 +201,7 @@ export const Box1Container = styled.div`
         position: none;
 
         /* right: -150px; */
-        right: 100px;
+        right: 105px;
       }
     }
   }
@@ -451,7 +450,7 @@ export const Box2Container = styled.div`
         font-size: 16px;
       }
       @media ${devices.smallMobiles} {
-        font-size: 14px;
+        font-size: 10px;
       }
     }
 
@@ -471,7 +470,7 @@ export const Box2Container = styled.div`
         font-size: 16px;
       }
       @media ${devices.smallMobiles} {
-        font-size: 14px;
+        font-size: 10px;
       }
     }
   }
@@ -532,7 +531,7 @@ export const Box2Container = styled.div`
         font-size: 20px;
       }
       @media ${devices.smallMobiles} {
-        font-size: 16px;
+        font-size: 12px;
       }
 
       .distValue {
@@ -550,7 +549,7 @@ export const Box2Container = styled.div`
           font-size: 16px;
         }
         @media ${devices.smallMobiles} {
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 
@@ -569,7 +568,7 @@ export const Box2Container = styled.div`
           font-size: 12px;
         }
         @media ${devices.smallMobiles} {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -607,7 +606,7 @@ export const Box2Container = styled.div`
         gap: 20px;
       }
       @media ${devices.smallMobiles} {
-        gap: 14px;
+        gap: 10px;
       }
     }
 
@@ -640,13 +639,13 @@ export const Box2Container = styled.div`
       @media ${devices.bigLaptopsAndDesktops} {
       }
       @media ${devices.tabletsAndIpads} {
-        gap: 14px;
+        font-size: 14px;
       }
       @media ${devices.smallTabs} {
-        gap: 12px;
+        font-size: 12px;
       }
       @media ${devices.smallMobiles} {
-        gap: 10px;
+        font-size: 12px;
       }
     }
   }
@@ -777,7 +776,6 @@ export const Box3Container = styled.div`
     @media ${devices.smallTabs} {
       padding: 10px 8px;
       gap: 30px;
-
     }
     @media ${devices.smallMobiles} {
       padding: 6px 6px;
@@ -797,7 +795,8 @@ export const Box3Container = styled.div`
         font-size: 8px;
       }
       @media ${devices.smallTabs} {
-        font-size: 10px;
+        font-size: 8px;
+        font-weight: bold;
       }
 
       @media ${devices.smallMobiles} {
@@ -846,7 +845,7 @@ export const Box3Container = styled.div`
         font-size: 12.5px;
       }
       @media ${devices.smallTabs} {
-        padding: 8px 6px;
+        padding: 8px 10px;
         font-size: 12.5px;
       }
 

@@ -67,11 +67,9 @@ export const DashboardContainer = styled.div`
       flex: 1;
     }
     @media ${devices.smallTabs} {
-      display: none;
+      display: flex;
     }
     @media ${devices.smallMobiles} {
-      /* display: flex;
-      margin-bottom: 50px; */
       display: flex;
     }
   }
