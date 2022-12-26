@@ -17,6 +17,9 @@ export const NavbarContainer = styled.nav`
     /* padding: 20px 20px;
     width: 100%; */
     padding: 8px 20px;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   }
   @media ${devices.smallTabs} {
     display: none;
@@ -223,6 +226,7 @@ export const UserModalBox = styled.div`
 `;
 
 export const MoblieNavigation = styled.nav`
+  display: none;
   @media ${devices.bigLaptopsAndDesktops} {
     display: none;
   }
@@ -257,7 +261,7 @@ export const MoblieNavigation = styled.nav`
       height: 40px;
       width: 100%;
     }
-    @media ${devices.smallTabs} {
+    /* @media ${devices.smallTabs} {
       height: 30px;
       object-fit: fill;
       height: 40px;
@@ -268,7 +272,7 @@ export const MoblieNavigation = styled.nav`
       object-fit: fill;
       height: 30px;
       width: 100%;
-    }
+    } */
   }
 
   .mobmenuIcon {

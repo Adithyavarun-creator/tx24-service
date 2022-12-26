@@ -5,46 +5,59 @@ export const DashboardContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* gap: 150px; */
 
   @media ${devices.bigLaptopsAndDesktops} {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   @media ${devices.tabletsAndIpads} {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    gap: 20px;
+    padding: 20px 20px;
     flex-wrap: wrap;
   }
-
   @media ${devices.smallTabs} {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    gap: 20px;
+    padding: 10px 10px;
     flex-wrap: wrap;
+  }
+  @media ${devices.smallMobiles} {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
   }
 
   .leftbarWrapper {
-    flex: 2;
+    /* flex: 1; */
 
     @media ${devices.bigLaptopsAndDesktops} {
-      flex: 2;
+      flex: 1;
     }
 
     @media ${devices.tabletsAndIpads} {
       flex: 1;
     }
     @media ${devices.smallTabs} {
-      flex: 1;
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
   .contentWrapper {
-    flex: 5;
+    /* flex: 5; */
 
     @media ${devices.bigLaptopsAndDesktops} {
       flex: 3;
@@ -54,15 +67,17 @@ export const DashboardContainer = styled.div`
       flex: 1;
     }
     @media ${devices.smallTabs} {
-      flex: 1;
+      display: none;
     }
     @media ${devices.smallMobiles} {
-      display: none;
+      /* display: flex;
+      margin-bottom: 50px; */
+      display: flex;
     }
   }
 
   .rightbarWrapper {
-    flex: 2;
+    /* flex: 2; */
 
     @media ${devices.bigLaptopsAndDesktops} {
       flex: 2;
@@ -72,7 +87,10 @@ export const DashboardContainer = styled.div`
       flex: 1;
     }
     @media ${devices.smallTabs} {
-      flex: 1;
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 `;

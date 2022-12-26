@@ -102,6 +102,7 @@ const MidContent: React.FC = () => {
                             <span className='distUnits'>USDT</span>
                         </div>
                     </div>
+
                     <div>Chart</div>
 
                     <div className='distributionPercentages'>
@@ -145,7 +146,7 @@ const MidContent: React.FC = () => {
 
                 <div className="transactionRowNames">
                     <div>
-                        <span>Transaction   #ID</span>
+                        <span>Transaction #ID</span>
                     </div>
                     <div>
                         <span>Token</span>
@@ -165,55 +166,65 @@ const MidContent: React.FC = () => {
                 </div>
 
                 <div className="transactionRowNames">
-                    <div className='flexColumn'>
-                        <span>TNX0001
-                        </span>
-                        <span>2022-10-21 10:45PM
-                        </span>
+                    <div>
+                        <span>TNX0001 2022-10-21 10:45PM</span>
+                    </div>
+                    <div>
+                        <span>288.000 TXT</span>
                     </div>
 
-                    <div className='flexColumn'>
-                        <span>288.000</span>
-                        <span>TXT</span>
+                    <div>
+                        <span>350.000 USD</span>
                     </div>
 
-                    <div className='flexColumn'>
-                        <span>350.000</span>
-                        <span>USDT</span>
-                    </div>
-
-                    <div className='walletBox'>
+                    <div>
                         <span>1FtDj64Dgtuy345jhfgA</span>
                     </div>
 
-                    <div className='statusBox'>
+                    <div>
+                        <span>Pending</span>
+                    </div>
+                </div>
+
+
+                <div className="transactionRowNames">
+                    <div>
+                        <span>TNX0001 2022-10-21 10:45PM</span>
+                    </div>
+                    <div>
+                        <span>288.000 TXT</span>
+                    </div>
+
+                    <div>
+                        <span>350.000 USD</span>
+                    </div>
+
+                    <div>
+                        <span>1FtDj64Dgtuy345jhfgA</span>
+                    </div>
+
+                    <div>
                         <span>Pending</span>
                     </div>
                 </div>
 
                 <div className="transactionRowNames">
-                    <div className='flexColumn'>
-                        <span>TNX0001
-                        </span>
-                        <span>2022-10-21 10:45PM
-                        </span>
+                    <div>
+                        <span>TNX0001 2022-10-21 10:45PM</span>
+                    </div>
+                    <div>
+                        <span>288.000 TXT</span>
                     </div>
 
-                    <div className='flexColumn'>
-                        <span>288.000</span>
-                        <span>TXT</span>
+                    <div>
+                        <span>350.000 USD</span>
                     </div>
 
-                    <div className='flexColumn'>
-                        <span>350.000</span>
-                        <span>USDT</span>
-                    </div>
-
-                    <div className='walletBox'>
+                    <div>
                         <span>1FtDj64Dgtuy345jhfgA</span>
                     </div>
 
-                    <div className='statusBox'>
+                    <div>
                         <span>Pending</span>
                     </div>
                 </div>
@@ -225,10 +236,6 @@ const MidContent: React.FC = () => {
 
 
             </Box3Container>
-
-
-
-
 
         </MidContentContainer >
     );

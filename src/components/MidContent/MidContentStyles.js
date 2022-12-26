@@ -16,11 +16,18 @@ export const MidContentContainer = styled.div`
 
   @media ${devices.smallTabs} {
     gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 0 auto;
   }
   @media ${devices.smallMobiles} {
     gap: 30px;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 0 auto;
   }
 `;
 
@@ -47,15 +54,20 @@ export const Box1Container = styled.div`
   @media ${devices.tabletsAndIpads} {
     padding: 10px 25px;
     gap: 10px;
+    display: flex;
+
   }
 
   @media ${devices.smallTabs} {
-    padding: 10px 25px;
+    padding: 10px 15px;
     gap: 20px;
+    display: flex;
   }
   @media ${devices.smallMobiles} {
-    padding: 10px 10px;
+    padding: 5px 15px;
     gap: 10px;
+    display: flex;
+    /* justify-content: center; */
   }
 
   .contentInfo {
@@ -76,7 +88,9 @@ export const Box1Container = styled.div`
     }
     @media ${devices.smallMobiles} {
       display: flex;
+      /* gap: 13px; */
       justify-content: space-between;
+      /* width: 80vw; */
     }
 
     h1 {
@@ -97,22 +111,22 @@ export const Box1Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 14px;
       }
       @media ${devices.smallTabs} {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
       }
       @media ${devices.smallMobiles} {
         font-weight: 300;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
 
   .contentTokenBox {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: row;
     position: relative;
     /* gap: 30px; */
@@ -130,15 +144,20 @@ export const Box1Container = styled.div`
     }
     @media ${devices.smallTabs} {
       display: flex;
-      justify-content: space-between;
       flex-direction: row;
-      position: relative;
+      /* gap: 70px; */
+      align-items: center;
+      justify-content: space-between;
     }
     @media ${devices.smallMobiles} {
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       flex-direction: row;
-      position: relative;
+      /* position: relative; */
+      gap: 40px;
+      /* justify-content: space-around; */
+      align-items: center;
+      /* justify-content: space-between; */
     }
 
     span {
@@ -153,7 +172,7 @@ export const Box1Container = styled.div`
       }
       @media ${devices.tabletsAndIpads} {
         font-weight: 300;
-        font-size: 13.5px;
+        font-size: 12.5px;
       }
       @media ${devices.smallTabs} {
         font-weight: 300;
@@ -161,7 +180,7 @@ export const Box1Container = styled.div`
       }
       @media ${devices.smallMobiles} {
         font-weight: 300;
-        font-size: 12.5px;
+        font-size: 10.5px;
       }
     }
 
@@ -174,13 +193,16 @@ export const Box1Container = styled.div`
         right: 140px;
       }
       @media ${devices.tabletsAndIpads} {
-        right: 135px;
+        right: 105px;
       }
       @media ${devices.smallTabs} {
         right: 135px;
       }
       @media ${devices.smallMobiles} {
-        right: 135px;
+        position: none;
+
+        /* right: -150px; */
+        right: 100px;
       }
     }
   }
@@ -206,7 +228,9 @@ export const Box1Container = styled.div`
       padding: 15px 20px;
     }
     @media ${devices.smallMobiles} {
-      padding: 10px 10px;
+      padding: 5px 5px;
+      height: 30px;
+      width: 67%;
     }
 
     span {
@@ -229,7 +253,7 @@ export const Box1Container = styled.div`
       }
       @media ${devices.smallMobiles} {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 9px;
         color: black;
       }
     }
@@ -334,16 +358,19 @@ export const Box2Container = styled.div`
     @media ${devices.bigLaptopsAndDesktops} {
     }
     @media ${devices.tabletsAndIpads} {
-      height: 10px;
-      width: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     @media ${devices.smallTabs} {
-      height: 10px;
-      width: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     @media ${devices.smallMobiles} {
-      height: 8px;
-      width: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -378,9 +405,15 @@ export const Box2Container = styled.div`
       gap: 8px;
     }
     @media ${devices.smallTabs} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 8px;
     }
     @media ${devices.smallMobiles} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 6px;
     }
 
@@ -447,6 +480,23 @@ export const Box2Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media ${devices.bigLaptopsAndDesktops} {
+    }
+    @media ${devices.tabletsAndIpads} {
+    }
+    @media ${devices.smallTabs} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    @media ${devices.smallMobiles} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+    }
   }
 
   .distributionAmounts {
@@ -570,13 +620,14 @@ export const Box2Container = styled.div`
       @media ${devices.bigLaptopsAndDesktops} {
       }
       @media ${devices.tabletsAndIpads} {
-        gap: 14px;
+        font-size: 14px;
       }
       @media ${devices.smallTabs} {
-        gap: 12px;
+        font-size: 12px;
       }
       @media ${devices.smallMobiles} {
         gap: 10px;
+        font-size: 12px;
       }
     }
 
@@ -627,6 +678,8 @@ export const Box3Container = styled.div`
   }
   @media ${devices.smallMobiles} {
     gap: 10px;
+    padding: 5px 10px;
+    justify-content: center;
   }
 
   .contentHide {
@@ -719,36 +772,16 @@ export const Box3Container = styled.div`
     }
     @media ${devices.tabletsAndIpads} {
       padding: 10px 8px;
+      gap: 10px;
     }
     @media ${devices.smallTabs} {
       padding: 10px 8px;
+      gap: 30px;
+
     }
     @media ${devices.smallMobiles} {
       padding: 6px 6px;
-    }
-
-    .flexColumn {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-
-      @media ${devices.bigLaptopsAndDesktops} {
-      }
-      @media ${devices.tabletsAndIpads} {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-      @media ${devices.smallTabs} {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      @media ${devices.smallMobiles} {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
+      gap: 20px;
     }
 
     span {
@@ -761,14 +794,14 @@ export const Box3Container = styled.div`
         font-size: 13px;
       }
       @media ${devices.tabletsAndIpads} {
-        font-size: 13px;
+        font-size: 8px;
       }
       @media ${devices.smallTabs} {
-        font-size: 13px;
+        font-size: 10px;
       }
 
       @media ${devices.smallMobiles} {
-        font-size: 11px;
+        font-size: 6px;
       }
     }
   }
@@ -809,7 +842,7 @@ export const Box3Container = styled.div`
       @media ${devices.bigLaptopsAndDesktops} {
       }
       @media ${devices.tabletsAndIpads} {
-        padding: 8px 6px;
+        padding: 8px 10px;
         font-size: 12.5px;
       }
       @media ${devices.smallTabs} {
@@ -818,8 +851,8 @@ export const Box3Container = styled.div`
       }
 
       @media ${devices.smallMobiles} {
-        padding: 6px 4px;
-        font-size: 12.5px;
+        padding: 6px 8px;
+        font-size: 10px;
       }
     }
   }
