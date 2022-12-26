@@ -5,32 +5,29 @@ export const DashboardContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  /* flex-wrap: nowrap; */
-  /* gap: 150px; */
+  gap: 60px;
 
   @media ${devices.bigLaptopsAndDesktops} {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap: nowrap;
+    gap: 50px;
   }
 
   @media ${devices.tabletsAndIpads} {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    gap: 20px;
-    padding: 20px 20px;
-    flex-wrap: wrap;
+    padding: 10px 5px;
+    gap: 10px;
   }
   @media ${devices.smallTabs} {
     display: flex;
     flex-direction: row;
-    /* margin-top: 20px; */
-    gap: 20px;
     padding: 10px 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   @media ${devices.smallMobiles} {
     display: flex;
@@ -82,7 +79,7 @@ export const DashboardContainer = styled.div`
     }
 
     @media ${devices.tabletsAndIpads} {
-      flex: 1;
+      display: inline-block;
     }
     @media ${devices.smallTabs} {
       display: none;

@@ -41,6 +41,12 @@ export const FooterContainer = styled.footer`
       height: 30px;
       width: 100%;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .footerBox {
@@ -52,6 +58,12 @@ export const FooterContainer = styled.footer`
     }
     @media ${devices.tabletsAndIpads} {
       gap: 10px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -67,6 +79,12 @@ export const FooterContainer = styled.footer`
     @media ${devices.tabletsAndIpads} {
       font-size: 18px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .footerul {
@@ -81,6 +99,12 @@ export const FooterContainer = styled.footer`
     @media ${devices.tabletsAndIpads} {
       gap: 3px;
     }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
+    }
   }
 
   .footerlist {
@@ -94,6 +118,12 @@ export const FooterContainer = styled.footer`
     }
     @media ${devices.tabletsAndIpads} {
       font-size: 14px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 
@@ -113,6 +143,12 @@ export const FooterContainer = styled.footer`
     }
     @media ${devices.tabletsAndIpads} {
       font-size: 14px;
+    }
+    @media ${devices.smallTabs} {
+      display: none;
+    }
+    @media ${devices.smallMobiles} {
+      display: none;
     }
   }
 `;

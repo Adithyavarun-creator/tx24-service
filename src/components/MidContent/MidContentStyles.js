@@ -167,11 +167,11 @@ export const Box1Container = styled.div`
 
       @media ${devices.bigLaptopsAndDesktops} {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 12px;
       }
       @media ${devices.tabletsAndIpads} {
         font-weight: 300;
-        font-size: 12.5px;
+        font-size: 10.5px;
       }
       @media ${devices.smallTabs} {
         font-weight: 300;
@@ -189,10 +189,10 @@ export const Box1Container = styled.div`
 
       @media ${devices.bigLaptopsAndDesktops} {
         position: absolute;
-        right: 140px;
+        right: 110px;
       }
       @media ${devices.tabletsAndIpads} {
-        right: 105px;
+        right: 85px;
       }
       @media ${devices.smallTabs} {
         right: 135px;
@@ -498,6 +498,53 @@ export const Box2Container = styled.div`
     }
   }
 
+  .graphBox {
+    display: flex;
+    margin-top: 30px;
+    @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      margin-top: 30px;
+    }
+    @media ${devices.tabletsAndIpads} {
+      display: flex;
+      margin-top: 30px;
+    }
+    @media ${devices.smallTabs} {
+      display: flex;
+      margin-top: 20px;
+    }
+    @media ${devices.smallMobiles} {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .contentGraph {
+      height: 60px;
+      width: 100%;
+      object-fit: fill;
+      @media ${devices.bigLaptopsAndDesktops} {
+        height: 60px;
+        width: 100%;
+        object-fit: fill;
+      }
+      @media ${devices.tabletsAndIpads} {
+        height: 60px;
+        width: 100%;
+        object-fit: fill;
+      }
+      @media ${devices.smallTabs} {
+        height: 100px;
+        width: 100px;
+        object-fit: fill;
+      }
+      @media ${devices.smallMobiles} {
+        height: 40px;
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+
   .distributionAmounts {
     display: flex;
     flex-direction: column;
@@ -768,6 +815,8 @@ export const Box3Container = styled.div`
     border-bottom: 2px solid lightgray;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      padding: 10px 8px;
+      gap: 10px;
     }
     @media ${devices.tabletsAndIpads} {
       padding: 10px 8px;
@@ -789,7 +838,7 @@ export const Box3Container = styled.div`
       color: #000000;
 
       @media ${devices.bigLaptopsAndDesktops} {
-        font-size: 13px;
+        font-size: 8px;
       }
       @media ${devices.tabletsAndIpads} {
         font-size: 8px;

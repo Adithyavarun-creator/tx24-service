@@ -9,8 +9,18 @@ export const RightbarContainer = styled.div`
   gap: 50px;
 
   @media ${devices.bigLaptopsAndDesktops} {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 15px 15px;
+    gap: 50px;
   }
   @media ${devices.tabletsAndIpads} {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 5px 5px;
+    gap: 35px;
   }
 
   @media ${devices.smallTabs} {
@@ -31,9 +41,21 @@ export const RightbarContainer = styled.div`
     border: 2px solid lightgrey;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      border: 1px solid grey;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 15px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      border: 2px solid lightgrey;
     }
     @media ${devices.tabletsAndIpads} {
+      /* width: 60%; */
+      /* margin: 0 auto; */
       width: 60%;
+      padding: 7px 7px;
+      justify-content: center;
       margin: 0 auto;
     }
   }
@@ -45,8 +67,16 @@ export const RightbarContainer = styled.div`
     color: #ff1282;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      color: #ff1282;
     }
     @media ${devices.tabletsAndIpads} {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      color: #ff1282;
     }
   }
 
@@ -57,8 +87,13 @@ export const RightbarContainer = styled.div`
     color: #000000;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      color: #000000;
     }
     @media ${devices.tabletsAndIpads} {
+      font-size: 10px;
     }
   }
 
@@ -68,8 +103,15 @@ export const RightbarContainer = styled.div`
     gap: 10px;
     align-items: center;
     @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
     }
     @media ${devices.tabletsAndIpads} {
+      gap: 10px;
+      /* padding: 5px 5px; */
+      justify-content: center;
     }
   }
 
@@ -84,10 +126,12 @@ export const RightbarContainer = styled.div`
     cursor: pointer;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      gap: 15px;
     }
     @media ${devices.tabletsAndIpads} {
       padding: 10px 10px;
       width: 40%;
+      gap: 5;
       margin: 0 auto;
     }
   }
@@ -98,8 +142,12 @@ export const RightbarContainer = styled.div`
     color: white;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      height: 40px;
+      width: 40px;
     }
     @media ${devices.tabletsAndIpads} {
+      height: 20px;
+      width: 20px;
     }
   }
 
@@ -110,8 +158,10 @@ export const RightbarContainer = styled.div`
     color: #ffffff;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      font-size: 20px;
     }
     @media ${devices.tabletsAndIpads} {
+      font-size: 10px;
     }
   }
 
@@ -134,8 +184,9 @@ export const RightbarContainer = styled.div`
     @media ${devices.bigLaptopsAndDesktops} {
     }
     @media ${devices.tabletsAndIpads} {
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
+      gap: 10px;
     }
   }
 
@@ -159,6 +210,7 @@ export const RightbarContainer = styled.div`
     @media ${devices.bigLaptopsAndDesktops} {
     }
     @media ${devices.tabletsAndIpads} {
+      font-size: 8px;
     }
   }
 
@@ -168,10 +220,12 @@ export const RightbarContainer = styled.div`
     gap: 10px;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      flex-direction: column;
     }
     @media ${devices.tabletsAndIpads} {
       gap: 13px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
     }
   }
 
@@ -181,34 +235,43 @@ export const RightbarContainer = styled.div`
     gap: 14px;
 
     @media ${devices.bigLaptopsAndDesktops} {
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      justify-content: center;
     }
     @media ${devices.tabletsAndIpads} {
-      gap: 30px;
+      gap: 8px;
       justify-content: center;
     }
 
     .stageStep {
       font-style: normal;
-      font-weight: 300;
-      font-size: 8px;
+      font-size: 12px;
       color: #ff1282;
+      font-weight: bold;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        font-size: 12px;
       }
       @media ${devices.tabletsAndIpads} {
+        font-size: 6px;
+        font-weight: bold;
       }
     }
 
     span {
       font-style: normal;
-      font-size: 8px;
+      font-size: 12px;
       color: #000000;
       font-weight: 300;
 
       @media ${devices.bigLaptopsAndDesktops} {
+        font-size: 12px;
+
       }
       @media ${devices.tabletsAndIpads} {
-        font-size: 12px;
+        font-size: 8px;
       }
     }
   }

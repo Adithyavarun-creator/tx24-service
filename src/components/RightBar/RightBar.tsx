@@ -5,7 +5,6 @@ import { MdQrCodeScanner } from 'react-icons/md'
 const RightBar: React.FC = () => {
     return (
         <RightbarContainer>
-
             <div className='rightbarBox-1'>
                 <div className='rightbarCountdown'>
                     <span className='righbarStage'>Stage-1</span>

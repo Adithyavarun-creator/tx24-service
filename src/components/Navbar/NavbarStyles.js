@@ -11,15 +11,16 @@ export const NavbarContainer = styled.nav`
 
   @media ${devices.bigLaptopsAndDesktops} {
     padding: 8px 20px;
-  }
-
-  @media ${devices.tabletsAndIpads} {
-    /* padding: 20px 20px;
-    width: 100%; */
-    padding: 8px 20px;
     display: flex;
   flex-direction: row;
   justify-content: space-between;
+  }
+
+  @media ${devices.tabletsAndIpads} {
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   @media ${devices.smallTabs} {
     display: none;

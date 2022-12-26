@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box1Container, Box2Container, Box3Container, MidContentContainer } from './MidContentStyles';
 import { BiHide } from 'react-icons/bi'
+import CircleGraph from '../../assets/images/piechart.png'
 
 const MidContent: React.FC = () => {
     return (
@@ -103,7 +104,9 @@ const MidContent: React.FC = () => {
                         </div>
                     </div>
 
-                    <div>Chart</div>
+                    <div className='graphBox'>
+                        <img src={CircleGraph} className='contentGraph' alt='' />
+                    </div>
 
                     <div className='distributionPercentages'>
                         <div className='distributionPercentage'>
