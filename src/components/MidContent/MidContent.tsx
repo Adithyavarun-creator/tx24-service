@@ -19,24 +19,26 @@ const MidContent: React.FC = () => {
                 <div className='contentTokenBox'>
                     <span>txt token price</span>
                     <span>1 TXT</span>
-                    <span className='contentEqual'>=</span>
+                    <span>=</span>
                     <span>0,00005208 BTC</span>
                 </div>
 
 
                 <div className='contentTokenBox'>
-                    <span>Minimum Ticket</span>
-                    <span>5.000 TXT</span>
-                    <span className='contentEqual'>=</span>
-                    <span>0,002604 BTC</span>
+                    <span>txt token price</span>
+                    <span>1 TXT</span>
+                    <span>=</span>
+                    <span>0,00005208 BTC</span>
                 </div>
 
+
                 <div className='contentTokenBox'>
-                    <span>Maximum Ticket</span>
-                    <span>150 TXT</span>
-                    <span className='contentEqual'>=</span>
-                    <span>7,812 BTC</span>
+                    <span>txt token price</span>
+                    <span>1 TXT</span>
+                    <span>=</span>
+                    <span>0,00005208 BTC</span>
                 </div>
+
 
                 <div className="contentInfo">
                     <h1>PRE-SALE TOKEN PROGRESS</h1>

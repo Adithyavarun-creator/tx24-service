@@ -125,9 +125,9 @@ export const Box1Container = styled.div`
 
   .contentTokenBox {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-direction: row;
-    position: relative;
+    /* position: relative; */
     /* gap: 30px; */
     @media ${devices.bigLaptopsAndDesktops} {
       display: flex;
@@ -180,28 +180,6 @@ export const Box1Container = styled.div`
       @media ${devices.smallMobiles} {
         font-weight: 300;
         font-size: 8.5px;
-      }
-    }
-
-    .contentEqual {
-      position: absolute;
-      right: 140px;
-
-      @media ${devices.bigLaptopsAndDesktops} {
-        position: absolute;
-        right: 110px;
-      }
-      @media ${devices.tabletsAndIpads} {
-        right: 85px;
-      }
-      @media ${devices.smallTabs} {
-        right: 135px;
-      }
-      @media ${devices.smallMobiles} {
-        position: none;
-
-        /* right: -150px; */
-        right: 85px;
       }
     }
   }
@@ -421,6 +399,7 @@ export const Box2Container = styled.div`
       flex-direction: row;
       gap: 10px;
       align-items: center;
+      /* justify-content: space-between; */
 
       @media ${devices.bigLaptopsAndDesktops} {
       }
