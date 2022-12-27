@@ -8,7 +8,11 @@ import { SlClose } from 'react-icons/sl'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 
-const Navbar: React.FC = () => {
+interface Props {
+    handleToggle?: () => void
+}
+
+const Navbar: React.FC<Props> = ({ handleToggle }) => {
 
     const [toggle, setToggle] = useState<boolean>(false)
     const [userModal, setUserModal] = useState<boolean>(false)

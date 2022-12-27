@@ -201,7 +201,7 @@ export const Box1Container = styled.div`
         position: none;
 
         /* right: -150px; */
-        right: 105px;
+        right: 85px;
       }
     }
   }
