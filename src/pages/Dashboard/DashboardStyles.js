@@ -6,6 +6,7 @@ export const DashboardContainer = styled.div`
   flex-direction: row;
   margin-top: 20px;
   gap: 60px;
+  justify-content: space-around;
 
   @media ${devices.bigLaptopsAndDesktops} {
     display: flex;
@@ -13,6 +14,7 @@ export const DashboardContainer = styled.div`
     margin-top: 20px;
     flex-wrap: nowrap;
     gap: 50px;
+    /* justify-content: space-between; */
   }
 
   @media ${devices.tabletsAndIpads} {
